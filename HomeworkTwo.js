@@ -160,3 +160,25 @@ function getMinAge(age){
     }
 }
 console.log(getMinAge);
+
+//Homework 2.
+
+function copyUser(user) {
+    const newUser = { ...user };
+  return newUser;
+}
+
+
+const originalUser = {
+    name: "John Doe",
+    age: 25,
+    email: "johndoe@example.com"
+  };
+
+  const createdUser = copyUser(originalUser);
+
+  console.log(createdUser.name);
+  console.log(createdUser.age);
+  console.log(createdUser.email);
+
+  //Homework 3.
